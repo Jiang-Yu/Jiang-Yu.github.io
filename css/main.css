@@ -1816,7 +1816,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #46cf03;
+  background: #c7f595;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2695,4 +2695,15 @@ body {
   border-radius: 20px;
   padding: 30px 60px 30px 60px;
   background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+sidebar {
+  background: url("/images/sidebar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+sidebar p,
+sidebar span,
+sidebar a {
+  color: #fff;
 }

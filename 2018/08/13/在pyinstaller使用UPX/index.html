@@ -124,7 +124,7 @@
 <meta property="og:image" content="http://jiang-yu.github.io/2018/08/13/在pyinstaller使用UPX/pic/2.png">
 <meta property="og:image" content="http://jiang-yu.github.io/2018/08/13/在pyinstaller使用UPX/pic/test2.png">
 <meta property="og:image" content="http://jiang-yu.github.io/2018/08/13/在pyinstaller使用UPX/pic/test1.png">
-<meta property="og:updated_time" content="2018-08-11T15:48:54.492Z">
+<meta property="og:updated_time" content="2018-08-16T12:46:52.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在pyinstaller使用UPX">
 <meta name="twitter:description" content="1. 在pyinstaller使用UPX采用pyinstaller 打包成exe文件时很方便，但使用了PYQT后生成后exe文件较大。为减小文件，查看pyinstaller 使用说明。 下载 UPX https://github.com/upx/upx/releases/tag/v3.94 2. 测试python环境：Python 3.5.3 |Anaconda 4.4.0 (64-bit)| (">
@@ -346,8 +346,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-11T23:48:54+08:00">
-                2018-08-11
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-16T20:46:52+08:00">
+                2018-08-16
               </time>
             
           </span>
@@ -419,7 +419,7 @@
 <p>109 INFO: PyInstaller: 3.4.dev0+g133d1815<br>109 INFO: Python: 3.5.3<br>109 INFO: Platform: Windows-10-10.0.14393-SP0<br>109 INFO: wrote F:\upx_test\untitled0.spec<br><u><em>156 INFO: UPX is available.</em></u><br>171 INFO: Extending PYTHONPATH with paths<br>[‘F:\upx_test’,<br> ‘E:\anaconda\envs\yu\Lib\site-packages\PyQt5’,<br> ‘F:\upx_test’]<br>171 INFO: checking Analysis<br>187 INFO: checking PYZ<br>203 INFO: checking PKG<br>203 INFO: Building because F:\upx_test\build\untitled0\untitled0.exe.manifest changed<br>203 INFO: Building PKG (CArchive) out00-PKG.pkg<br>562 INFO: Building PKG (CArchive) out00-PKG.pkg completed successfully.<br>562 INFO: Bootloader E:\Anaconda\envs\yu\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe<br>562 INFO: checking EXE<br>562 INFO: Building because manifest changed<br>562 INFO: Building EXE from out00-EXE.toc<br>562 INFO: Appending archive to EXE F:\upx_test\dist\untitled0.exe<br>578 INFO: Building EXE from out00-EXE.toc completed successfully.</p>
 <p><strong><em>成功提示：156 INFO: UPX is available.</em></strong></p>
 <p>#3.比较</p>
-<p>从新打包，命令行输入：(yu) F:\upx_test&gt;pyinstaller –path “E:\anaconda\envs\yu\Lib\site-packages\PyQt5” -F    untitled0.py</p>
+<p>重新打包，命令行输入：(yu) F:\upx_test&gt;pyinstaller –path “E:\anaconda\envs\yu\Lib\site-packages\PyQt5” -F    untitled0.py</p>
 <p>93 INFO: PyInstaller: 3.4.dev0+g133d1815<br>93 INFO: Python: 3.5.3<br>93 INFO: Platform: Windows-10-10.0.14393-SP0<br>93 INFO: wrote F:\upx_test\untitled0.spec<br><u>2125 INFO: UPX is not available.</u><br>2125 INFO: Extending PYTHONPATH with paths<br>[‘F:\upx_test’,<br> ‘E:\anaconda\envs\yu\Lib\site-packages\PyQt5’,<br> ‘F:\upx_test’]<br>2140 INFO: checking Analysis<br>2187 INFO: checking PYZ<br>2203 INFO: checking PKG<br>2219 INFO: Building because F:\upx_test\build\untitled0\untitled0.exe.manifest changed<br>2219 INFO: Building PKG (CArchive) out00-PKG.pkg<br>4109 INFO: Building PKG (CArchive) out00-PKG.pkg completed successfully.<br>4109 INFO: Bootloader E:\Anaconda\envs\yu\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe<br>4109 INFO: checking EXE<br>4109 INFO: Building because manifest changed<br>4109 INFO: Building EXE from out00-EXE.toc<br>4109 INFO: Appending archive to EXE F:\upx_test\dist\untitled0.exe<br>4125 INFO: Building EXE from out00-EXE.toc completed successfully.</p>
 <p><strong><em>未使用UPX提示：2125 INFO: UPX is not available.</em></strong></p>
 <p>使用前：<br><img src="pic\test2.png" alt="test1"></p>

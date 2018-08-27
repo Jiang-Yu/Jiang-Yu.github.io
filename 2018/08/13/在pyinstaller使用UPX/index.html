@@ -120,7 +120,7 @@
 <meta property="og:description" content="1. 在pyinstaller使用UPX采用pyinstaller 打包成exe文件时很方便，但使用了PYQT后生成后exe文件较大。为减小文件，查看pyinstaller 使用说明。 下载 UPX https://github.com/upx/upx/releases/tag/v3.94 2. 测试python环境：Python 3.5.3 |Anaconda 4.4.0 (64-bit)| (">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="e:/yuHexo/source/images/using_upx.png">
-<meta property="og:updated_time" content="2018-08-26T14:20:50.580Z">
+<meta property="og:updated_time" content="2018-08-27T14:23:19.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在pyinstaller使用UPX">
 <meta name="twitter:description" content="1. 在pyinstaller使用UPX采用pyinstaller 打包成exe文件时很方便，但使用了PYQT后生成后exe文件较大。为减小文件，查看pyinstaller 使用说明。 下载 UPX https://github.com/upx/upx/releases/tag/v3.94 2. 测试python环境：Python 3.5.3 |Anaconda 4.4.0 (64-bit)| (">
@@ -342,8 +342,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-26T22:20:50+08:00">
-                2018-08-26
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-27T22:23:19+08:00">
+                2018-08-27
               </time>
             
           </span>
@@ -423,13 +423,13 @@
       
 
       
-        <h1 id="1-在pyinstaller使用UPX"><a href="#1-在pyinstaller使用UPX" class="headerlink" title="1. 在pyinstaller使用UPX"></a>1. 在pyinstaller使用UPX</h1><p>采用pyinstaller 打包成exe文件时很方便，但使用了PYQT后生成后exe文件较大。为减小文件，查看pyinstaller 使用说明。<img src="E:\yuHexo\source\images\using_upx.png" alt="using_upx"></p>
+        <h2 id="1-在pyinstaller使用UPX"><a href="#1-在pyinstaller使用UPX" class="headerlink" title="1. 在pyinstaller使用UPX"></a>1. 在pyinstaller使用UPX</h2><p>采用pyinstaller 打包成exe文件时很方便，但使用了PYQT后生成后exe文件较大。为减小文件，查看pyinstaller 使用说明。<img src="E:\yuHexo\source\images\using_upx.png" alt="using_upx"></p>
 <p>下载 UPX <a href="https://github.com/upx/upx/releases/tag/v3.94" target="_blank" rel="noopener">https://github.com/upx/upx/releases/tag/v3.94</a></p>
-<h1 id="2-测试"><a href="#2-测试" class="headerlink" title="2. 测试"></a>2. 测试</h1><p>python环境：Python 3.5.3 |Anaconda 4.4.0 (64-bit)| (default, May 15 2017, 10:43:23) [MSC v.1900 64 bit (AMD64)] on win32</p>
+<h2 id="2-测试"><a href="#2-测试" class="headerlink" title="2. 测试"></a>2. 测试</h2><p>python环境：Python 3.5.3 |Anaconda 4.4.0 (64-bit)| (default, May 15 2017, 10:43:23) [MSC v.1900 64 bit (AMD64)] on win32</p>
 <p>命令行输入：pyinstaller –path “E:\anaconda\envs\yu\Lib\site-packages\PyQt5” -F   –upx-dir=”F:\upx_test\upx394w”  untitled0.py </p>
 <p>109 INFO: PyInstaller: 3.4.dev0+g133d1815<br>109 INFO: Python: 3.5.3<br>109 INFO: Platform: Windows-10-10.0.14393-SP0<br>109 INFO: wrote F:\upx_test\untitled0.spec<br><u><em>156 INFO: UPX is available.</em></u><br>171 INFO: Extending PYTHONPATH with paths<br>[‘F:\upx_test’,<br> ‘E:\anaconda\envs\yu\Lib\site-packages\PyQt5’,<br> ‘F:\upx_test’]<br>171 INFO: checking Analysis<br>187 INFO: checking PYZ<br>203 INFO: checking PKG<br>203 INFO: Building because F:\upx_test\build\untitled0\untitled0.exe.manifest changed<br>203 INFO: Building PKG (CArchive) out00-PKG.pkg<br>562 INFO: Building PKG (CArchive) out00-PKG.pkg completed successfully.<br>562 INFO: Bootloader E:\Anaconda\envs\yu\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe<br>562 INFO: checking EXE<br>562 INFO: Building because manifest changed<br>562 INFO: Building EXE from out00-EXE.toc<br>562 INFO: Appending archive to EXE F:\upx_test\dist\untitled0.exe<br>578 INFO: Building EXE from out00-EXE.toc completed successfully.</p>
 <p><strong><em>成功提示：156 INFO: UPX is available.</em></strong></p>
-<h1 id="3-比较"><a href="#3-比较" class="headerlink" title="3.比较"></a>3.比较</h1><p>重新打包，命令行输入：(yu) F:\upx_test&gt;pyinstaller –path “E:\anaconda\envs\yu\Lib\site-packages\PyQt5” -F    untitled0.py</p>
+<h2 id="3-比较"><a href="#3-比较" class="headerlink" title="3.比较"></a>3.比较</h2><p>重新打包，命令行输入：(yu) F:\upx_test&gt;pyinstaller –path “E:\anaconda\envs\yu\Lib\site-packages\PyQt5” -F    untitled0.py</p>
 <p>93 INFO: PyInstaller: 3.4.dev0+g133d1815<br>93 INFO: Python: 3.5.3<br>93 INFO: Platform: Windows-10-10.0.14393-SP0<br>93 INFO: wrote F:\upx_test\untitled0.spec<br><u>2125 INFO: UPX is not available.</u><br>2125 INFO: Extending PYTHONPATH with paths<br>[‘F:\upx_test’,<br> ‘E:\anaconda\envs\yu\Lib\site-packages\PyQt5’,<br> ‘F:\upx_test’]<br>2140 INFO: checking Analysis<br>2187 INFO: checking PYZ<br>2203 INFO: checking PKG<br>2219 INFO: Building because F:\upx_test\build\untitled0\untitled0.exe.manifest changed<br>2219 INFO: Building PKG (CArchive) out00-PKG.pkg<br>4109 INFO: Building PKG (CArchive) out00-PKG.pkg completed successfully.<br>4109 INFO: Bootloader E:\Anaconda\envs\yu\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe<br>4109 INFO: checking EXE<br>4109 INFO: Building because manifest changed<br>4109 INFO: Building EXE from out00-EXE.toc<br>4109 INFO: Appending archive to EXE F:\upx_test\dist\untitled0.exe<br>4125 INFO: Building EXE from out00-EXE.toc completed successfully.</p>
 <p><strong><em>未使用UPX提示：2125 INFO: UPX is not available.</em></strong></p>
 <p>使用前，使用后比较大小，可看到差异。</p>
@@ -599,7 +599,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-在pyinstaller使用UPX"><span class="nav-number">1.</span> <span class="nav-text">1. 在pyinstaller使用UPX</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-测试"><span class="nav-number">2.</span> <span class="nav-text">2. 测试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-比较"><span class="nav-number">3.</span> <span class="nav-text">3.比较</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在pyinstaller使用UPX"><span class="nav-number">1.</span> <span class="nav-text">1. 在pyinstaller使用UPX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-测试"><span class="nav-number">2.</span> <span class="nav-text">2. 测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-比较"><span class="nav-number">3.</span> <span class="nav-text">3.比较</span></a></li></ol></div>
             
 
           </div>

@@ -112,20 +112,17 @@
 
 
 
-<meta name="description" content="url到底怎么填网上各种说法，头痛。配置后要么hexo deploy 后github网页无法获取，要么本地localhost:4000/无法显示，发现是一个坑。反复折腾后，参考了两个博客方法解决了。  按下图修改url，deploy 成功。   本地无法显示：可能是端口4000被一些软件占用，修改端口：hexo s -p 5000，本地可以正常显示了。">
+<meta name="description" content="hexo deploy 后要么github网页无法获取，要么本地localhost:4000/无法显示。应该是url配置不对，反复折腾后，参考了2个博客方法解决了。  网页显示不成功，url的问题，按下面修改url，deploy 网页显示成功。 12url: http://your_github_name.github.ioroot: /  本地无法显示，可能是端口4000被一些软件占用，http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="创建 hexo blog 问题记录">
 <meta property="og:url" content="http://Jiang-Yu.github.io/2018/08/29/hexo-blog-创建问题记录/index.html">
 <meta property="og:site_name" content="江风无声">
-<meta property="og:description" content="url到底怎么填网上各种说法，头痛。配置后要么hexo deploy 后github网页无法获取，要么本地localhost:4000/无法显示，发现是一个坑。反复折腾后，参考了两个博客方法解决了。  按下图修改url，deploy 成功。   本地无法显示：可能是端口4000被一些软件占用，修改端口：hexo s -p 5000，本地可以正常显示了。">
+<meta property="og:description" content="hexo deploy 后要么github网页无法获取，要么本地localhost:4000/无法显示。应该是url配置不对，反复折腾后，参考了2个博客方法解决了。  网页显示不成功，url的问题，按下面修改url，deploy 网页显示成功。 12url: http://your_github_name.github.ioroot: /  本地无法显示，可能是端口4000被一些软件占用，http">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://jiang-yu.github.io/2018/08/29/hexo-blog-创建问题记录/bug_url.png">
-<meta property="og:image" content="http://jiang-yu.github.io/2018/08/29/hexo-blog-创建问题记录/localhost1.png">
-<meta property="og:updated_time" content="2018-09-02T06:25:32.806Z">
+<meta property="og:updated_time" content="2018-09-02T06:43:28.666Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建 hexo blog 问题记录">
-<meta name="twitter:description" content="url到底怎么填网上各种说法，头痛。配置后要么hexo deploy 后github网页无法获取，要么本地localhost:4000/无法显示，发现是一个坑。反复折腾后，参考了两个博客方法解决了。  按下图修改url，deploy 成功。   本地无法显示：可能是端口4000被一些软件占用，修改端口：hexo s -p 5000，本地可以正常显示了。">
-<meta name="twitter:image" content="http://jiang-yu.github.io/2018/08/29/hexo-blog-创建问题记录/bug_url.png">
+<meta name="twitter:description" content="hexo deploy 后要么github网页无法获取，要么本地localhost:4000/无法显示。应该是url配置不对，反复折腾后，参考了2个博客方法解决了。  网页显示不成功，url的问题，按下面修改url，deploy 网页显示成功。 12url: http://your_github_name.github.ioroot: /  本地无法显示，可能是端口4000被一些软件占用，http">
 
 
 
@@ -343,7 +340,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-02T14:25:32+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-02T14:43:28+08:00">
                 2018-09-02
               </time>
             
@@ -424,12 +421,14 @@
       
 
       
-        <p>url到底怎么填网上各种说法，头痛。配置后要么hexo deploy 后github网页无法获取，要么本地localhost:4000/无法显示，发现是一个坑。反复折腾后，参考了两个博客方法解决了。</p>
+        <p>hexo deploy 后要么github网页无法获取，要么本地localhost:4000/无法显示。应该是url配置不对，反复折腾后，参考了2个博客方法解决了。</p>
 <ul>
-<li>按下图修改url，deploy 成功。<img src="/2018/08/29/hexo-blog-创建问题记录/bug_url.png" alt="bug_url"></li>
-</ul>
-<ul>
-<li>本地无法显示：可能是端口4000被一些软件占用，修改端口：hexo s -p 5000，本地可以正常显示了。<img src="/2018/08/29/hexo-blog-创建问题记录/localhost1.png" alt="localhost1"></li>
+<li><p>网页显示不成功，url的问题，按下面修改url，deploy 网页显示成功。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: http://your_github_name.github.io</span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地无法显示，可能是端口4000被一些软件占用，<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 本地端口显示失败，修改端口：<a href="http://localhost:5000，本地可以正常显示了。" target="_blank" rel="noopener">http://localhost:5000，本地可以正常显示了。</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s -p 5000</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 
       
